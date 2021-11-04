@@ -34,6 +34,27 @@ export const cartReducer = (cart = initialCart, action) => {
             }
         };
 
-        
+        case 'cart/changeItemQuantity': {
+            const { itemName, newQuantity} = action.payload;
+            const itemToUpdate = cart[itemName];
+
+            // Create a copy of itemToUpdate and update the quantity prop
+
+            const updatedItem =  {
+                ...itemToUpdate,
+                quantity: newQuantity
+            }
+
+            // Return a copy of the cart with the updateItem included
+
+            return {
+                ...cart,
+                [iteName]: updatedItem
+            }
+        };
+
+        default: {
+            return cart;
+        }
     }
-}
+};
