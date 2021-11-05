@@ -18,3 +18,16 @@ export function calculateTotal(cart, currency) {
 
     return calculatePrice(totalUSD, currency).tofixed(2);
 }
+
+export function getCurrencySymbol(currencyFilter) {
+    switch (currencyFilter) {
+        case 'USD':
+            return '$';
+        case 'EUR':
+            return '€';
+        case 'CAD':
+            return '$';
+        default:
+            return '';        
+    }
+}
