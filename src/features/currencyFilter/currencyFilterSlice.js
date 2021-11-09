@@ -9,3 +9,10 @@ export const currencyFilterReducer = (currencyFilter = initialCurrencyFilter, ac
             return currencyFilter;
     }
 };
+
+export const setCurrency = (currency) => {
+    return {
+        type: 'currencyFilter/setCurrency',
+        payload: currency
+    }
+};
