@@ -12,8 +12,16 @@ export const inventoryData = [
     },
 
     {
-        name: 'T-shirt',
+        name: 'Java T-shirt',
         price: 17.99,
         img: 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/java-tee.jpg' 
-    }
+    },
+
+    {
+        name: 'Python Tee',
+        price: 17.99,
+        img: 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/python-tee.jpg'
+    },
+
+    
 ]
