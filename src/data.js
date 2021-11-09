@@ -23,5 +23,17 @@ export const inventoryData = [
         img: 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/python-tee.jpg'
     },
 
-    
-]
+    {
+        name: 'SQL Tee',
+        price: 17.99,
+        img: 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/sql-tee.jpg'
+    },
+
+    {
+        name: 'Hello World Hoodie',
+        price: 49.99,
+        img: 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/hoodie.jpg'
+    }
+];
+
+export const currenciesData = ['USD', 'EUR', 'CAD'];
