@@ -27,18 +27,20 @@ export const Inventory = ({ inventory, currencyFilter, dispatch}) => {
 
         const displayPrice = calculatePrice(price, currencyFilter);
             return (
-                <li>
-                    <img/>
+                <li key={name} className="item">
+                    <img src={img} alt={''}/>
                     <h3>{name}</h3>
-                    <h3>
+                    <h3 className="price">
                         {getCurrencySymbol(currencyFilter)}
                         {displayPrice.toFixed(2)}
                         {currencyFilter}
                     </h3>
-                    <button>
+                    <button
+                    onClick={() => onClickHandler(inventoryItem)
+                    }>
                         Add to Cart
                     </button>
                 </li>
-            )
+            );
     }
 }
