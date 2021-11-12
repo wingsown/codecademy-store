@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { CurrencyFilter } from './features/currencyFilter/CurrencyFilter';
-import { Inventory } from './features/inventory/Inventory';
+
 
 
 
