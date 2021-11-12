@@ -18,8 +18,17 @@ export const SearchTerm = (props) => {
 
     return (
       <div id="search-container">
-          <img src="" alt="" />
-          <input type="text" />
+          <img 
+            id="search-icon"
+            src={searchIconUrl}
+            alt=""/>
+          <input 
+            type="text"
+            id="search"
+            value={searchTerm}
+            onChange={onClearSearchTermHandler}
+            placeholder="Search products" 
+          />
           <button>
               <img src="" alt="" />
           </button>
