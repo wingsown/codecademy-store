@@ -19,7 +19,7 @@ export const Inventory = ({ inventory, currencyFilter, dispatch}) => {
     }
 
     return <ul>
-        {inventory.map()}
+        {inventory.map(createInventoryItem)}
     </ul>;
 
     function createInventoryItem(inventoryItem) {
