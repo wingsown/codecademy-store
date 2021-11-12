@@ -29,9 +29,18 @@ export const SearchTerm = (props) => {
             onChange={onClearSearchTermHandler}
             placeholder="Search products" 
           />
-          <button>
-              <img src="" alt="" />
+          {searchTerm.length > 0 && (
+              <button
+                onClick={onClearSearchTermHandler}
+                type="button"
+                id="search-clear-button"
+                >
+              <img 
+                src={clearIconUrl} 
+                alt="" 
+              />
           </button>
+          )}
       </div>  
-    )
-}
+    );
+};
