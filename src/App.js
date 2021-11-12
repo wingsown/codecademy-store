@@ -12,7 +12,6 @@ export const App = (props) => {
   return (
     <div className="App">
       <CurrencyFilter/>
-      <Inventory/>
     </div>
   );
 }
