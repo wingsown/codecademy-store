@@ -6,4 +6,9 @@ const clearIconUrl = 'https://static-assets.codecademy.com/Courses/Learn-Redux/R
 
 export const SearchTerm = (props) => {
     const { searchTerm, dispatch } = props;
+
+    const onSearchTermChangeHandler = (e) => {
+        const userInput = e.target.value;
+        dispatch(setSearchTerm(userInput));
+    }
 }
