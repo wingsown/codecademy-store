@@ -10,5 +10,19 @@ export const SearchTerm = (props) => {
     const onSearchTermChangeHandler = (e) => {
         const userInput = e.target.value;
         dispatch(setSearchTerm(userInput));
-    }
+    };
+
+    const onClearSearchTermHandler = () => {
+        dispatch(clearSearchTerm());
+    };
+
+    return (
+      <div id="search-container">
+          <img src="" alt="" />
+          <input type="text" />
+          <button>
+              <img src="" alt="" />
+          </button>
+      </div>  
+    )
 }
