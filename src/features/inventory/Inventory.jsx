@@ -18,7 +18,7 @@ export const Inventory = ({ inventory, currencyFilter, dispatch}) => {
         return <p> Sorry, no products are currently available...</p>;
     }
 
-    return <ul>
+    return <ul id="inventory-container">
         {inventory.map(createInventoryItem)}
     </ul>;
 
