@@ -1,8 +1,9 @@
 import React from 'react';
+import { calculateTotal, getCurrencySymbol } from '../../utilities';
 import { changeItemQuantity } from './cartSlice';
 
 export const Cart = (props) => {
-    const { cart } = props;
+    const { cart, currencyFilter, dispatch } = props;
 
     const onInputChangeHandler = (itemName, input ) => {
         
@@ -16,10 +17,34 @@ export const Cart = (props) => {
         const newQuantity = Number(input);
     };
 
+    const cartElements = [];
+
+    for (let itemName in cart) {
+        cartElements.push(createCartItem(itemName));
+    }
+
+    const total = calculateTotal(cart, currencyFilter);
+
     return (
         <div id="cart-container">
-            
+            <ul id="cart-items">{cartElements}</ul>
+            <h3 className="total">
+                Total{' '}
+                <span className="total-value">
+                    {getCurrencySymbol(currencyFilter)}
+                    {total}
+                    {currencyFilter}
+                </span>
+            </h3>
         </div>
-    )
+    );
+
+    function createCartItem(name) {
+        const item = cart[name];
+
+        if (item.quantity === 0) {
+            return;
+        }
+    }
 
 }
