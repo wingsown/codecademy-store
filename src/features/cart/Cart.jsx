@@ -45,6 +45,20 @@ export const Cart = (props) => {
         if (item.quantity === 0) {
             return;
         }
+
+        return (
+            <li key={name}>
+                <p>{name}</p>
+                <select 
+                name="" 
+                id="">
+                <option 
+                value="">
+
+                </option>
+                </select>
+            </li>
+        )
     }
 
 }
