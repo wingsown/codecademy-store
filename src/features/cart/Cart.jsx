@@ -17,6 +17,8 @@ export const Cart = (props) => {
         const newQuantity = Number(input);
     };
 
+
+
     const cartElements = [];
 
     for (let itemName in cart) {
@@ -39,23 +41,30 @@ export const Cart = (props) => {
         </div>
     );
 
-    function createCartItem(name) {
-        const item = cart[name];
+    function createCartItem(itemName) {
+        const item = cart[itemName];
 
         if (item.quantity === 0) {
             return;
         }
 
         return (
-            <li key={name}>
-                <p>{name}</p>
+            <li key={itemName}>
+                <p>{itemName}</p>
                 <select 
-                name="" 
-                id="">
-                <option 
-                value="">
-
-                </option>
+                className="item-quantity" 
+                value={item.quantity}
+                onChange={(e) => {
+                    onInputChangeHandler(itemName, e.target.value)
+                }}>
+                    {[...Array(100).keys()].map((_,index) => (
+                        <option 
+                        key={index}
+                        value={index}>
+                            {index}
+                        </option>
+                    ))}
+                
                 </select>
             </li>
         )
