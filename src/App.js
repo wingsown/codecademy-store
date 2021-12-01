@@ -3,9 +3,6 @@ import './App.css';
 import { CurrencyFilter } from './features/currencyFilter/CurrencyFilter';
 
 
-
-
-
 export const App = (props) => {
 
   const { state, dispatch } = props;
