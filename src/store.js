@@ -7,4 +7,4 @@ export const store = createStore(combineReducers({
     cart: cartReducer,
     inventory: inventoryReducer,
     currencyFilter: currencyFilterReducer
-}))
+}));

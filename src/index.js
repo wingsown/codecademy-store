@@ -2,13 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { store } from './store';
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const render = () => {
+  ReactDOM.render(
+    <App
+      state={store.getState()}
+      dispatch={store.dispatch}
+    />,
+    document.getElementById('root')
+  )
+};
+
+render();
+
 
 
