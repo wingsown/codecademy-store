@@ -12,10 +12,7 @@ export const App = (props) => {
 
   return (
     <div className="App">
-      <CurrencyFilter 
-        currencyFilter={state.currencyFilter}
-        dispatch={dispatch}
-        />
+      <CurrencyFilter/>
 
     </div>
   );
