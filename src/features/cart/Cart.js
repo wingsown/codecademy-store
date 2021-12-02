@@ -14,6 +14,9 @@ export const Cart = (props) => {
 
         //Otherwise, convert the input into a number and pass it along as the newQuantity
         const newQuantity = Number(input);
+
+        // Dispatch an action to change the quantity of the given name and quantity.
+        dispatch(changeItemQuantity(itemName, newQuantity));
     };
 
     const cartElements = [];
@@ -51,7 +54,6 @@ export const Cart = (props) => {
                 value={item.quantity}
                 onChange={(e) => {
                     onInputChangeHandler(itemName, e.target.value)
-                    changeItemQuantity(itemName, newQuantity);
                 }}>
                     {[...Array(100).keys()].map((_,index) => (
                         <option key={index} value={index}>

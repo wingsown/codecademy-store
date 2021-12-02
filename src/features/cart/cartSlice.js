@@ -6,7 +6,7 @@ export const addItem = (itemToAdd) => {
 };
 
 
-const changeItemQuantity = (itemName, newQuantity) => {
+ export const changeItemQuantity = (itemName, newQuantity) => {
     return {
         type: 'cart/changeItemQuantity',
         payload: {
