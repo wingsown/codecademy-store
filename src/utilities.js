@@ -16,7 +16,7 @@ export function calculateTotal(cart, currency) {
       totalUSD += cart[itemName].price * cart[itemName].quantity;  
     })
 
-    return calculatePrice(totalUSD, currency).tofixed(2);
+    return calculatePrice(totalUSD, currency).toFixed(2);
 }
 
 export function getCurrencySymbol(currencyFilter) {
