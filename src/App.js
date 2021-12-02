@@ -4,6 +4,7 @@ import { CurrencyFilter } from './features/currencyFilter/CurrencyFilter';
 import { Inventory } from './features/inventory/Inventory';
 
 
+
 export const App = (props) => {
 
   const { state, dispatch } = props;
