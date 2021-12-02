@@ -1,5 +1,5 @@
 import React from 'react';
-import { calculatePrice, calculateTotal, getCurrencySymbol } from '../../utilities';
+import { calculateTotal, getCurrencySymbol } from '../../utilities';
 import { changeItemQuantity } from './cartSlice';
 
 export const Cart = (props) => {
@@ -22,7 +22,7 @@ export const Cart = (props) => {
         cartElements.push(createCartItem(item));
     }
 
-    const total = calculatePrice(cart, currencyFilter);
+    const total = calculateTotal(cart, currencyFilter);
 
     return (
         <div id="cart-container">
