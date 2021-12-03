@@ -132,4 +132,11 @@ code {
   font-weight: 600;
   margin-top: 12px;
   cursor: pointer;
+  transition: .3s;
 }
+
+.add-to-cart-button:hover {
+  color: white;
+  background: #131b3c;
+}
+
