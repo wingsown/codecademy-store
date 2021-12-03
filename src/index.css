@@ -65,3 +65,11 @@ code {
   display: inline;
   margin: 0;
 }
+
+#cart-items li {
+  list-style: none;
+  font-weight: 700;
+  color: #131b3c;
+  display: flex;
+  margin-bottom: 8px;
+}
