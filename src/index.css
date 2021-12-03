@@ -118,3 +118,18 @@ code {
   width: 100%;
   box-sizing: border-box;
 }
+
+.price {
+  color: #7000ec;
+}
+
+.add-to-cart-button {
+  background: none;
+  color: #131b3c;
+  border: 1px solid #131b3c;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: pointer;
+}
