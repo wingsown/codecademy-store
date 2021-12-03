@@ -165,3 +165,11 @@ code {
   margin-left: auto;
 }
 
+.item-quantity {
+  margin-left: auto;
+  border: 1px solid #131b3c;
+  border-radius: 4px;
+  width: 50px;
+  padding: 2px 4px;
+}
+
