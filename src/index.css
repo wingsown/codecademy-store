@@ -51,3 +51,17 @@ code {
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   gap: 12px 12px;
 }
+
+#inventory-container li {
+  flex: 1;
+  list-style: none;
+}
+
+#cart-items {
+  padding: 0;
+}
+
+#cart-items p {
+  display: inline;
+  margin: 0;
+}
