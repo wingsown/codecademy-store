@@ -19,11 +19,12 @@ code {
   height: 100%;
   margin: 15px;
   margin-bottom: 0px;
+  font-family: 'Poppins', sans-serif;
 }
 .App {
   display: flex;
   flex-direction: column;
-  color: #141c3a;
+  color: #262626;
 }
 
 .header {
