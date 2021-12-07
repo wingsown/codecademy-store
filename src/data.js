@@ -36,4 +36,4 @@ export const inventoryData = [
     }
 ];
 
-export const currenciesData = ['USD', 'EUR', 'CAD'];
+export const currenciesData = ['USD', 'EUR', 'CAD', 'PHP'];
