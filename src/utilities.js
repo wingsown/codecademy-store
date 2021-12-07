@@ -1,7 +1,7 @@
 export function calculatePrice(price, currency) {
     switch (currency) {
-        case 'EUR': 
-            return price * 0.86;
+        case 'JPY': 
+            return price * 113.54;
         case 'PHP':
             return price * 50.32;
         default:
@@ -23,8 +23,8 @@ export function getCurrencySymbol(currencyFilter) {
     switch (currencyFilter) {
         case 'USD':
             return '$';
-        case 'EUR':
-            return '€';
+        case 'JPY':
+            return '¥';
         case 'PHP':
             return '₱';
         default:
