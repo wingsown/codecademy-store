@@ -164,13 +164,13 @@ code {
 }
 
 .total-value {
-  color: #7000ec;
+  color: #1a1a1a;
   margin-left: auto;
 }
 
 .item-quantity {
   margin-left: auto;
-  border: 1px solid #131b3c;
+  border: 1px solid #262626;
   border-radius: 4px;
   width: 50px;
   padding: 2px 4px;
