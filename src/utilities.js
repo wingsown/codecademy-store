@@ -4,6 +4,8 @@ export function calculatePrice(price, currency) {
             return price * 0.86;
         case 'CAD':
             return price * 1.33;
+        case 'PHP':
+            return price * 50.32;
         default:
              return price;   
     }
@@ -27,6 +29,8 @@ export function getCurrencySymbol(currencyFilter) {
             return '€';
         case 'CAD':
             return '$';
+        case 'PHP':
+            return '₱';
         default:
             return '';        
     }
