@@ -1,4 +1,4 @@
-const initialCurrencyFilter = 'USD';
+const initialCurrencyFilter = 'PHP';
 
 export const currencyFilterReducer = (currencyFilter = initialCurrencyFilter, action) => {
     switch (action.type) {
