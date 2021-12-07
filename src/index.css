@@ -123,13 +123,13 @@ code {
 }
 
 .price {
-  color: #7000ec;
+  color: #1a1a1a;
 }
 
 .add-to-cart-button {
   background: none;
-  color: #131b3c;
-  border: 1px solid #131b3c;
+  color: #262626;
+  border: 1px solid #262626;
   border-radius: 4px;
   padding: 4px 8px;
   font-weight: 600;
