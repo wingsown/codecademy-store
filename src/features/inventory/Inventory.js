@@ -21,12 +21,12 @@ export const Inventory = ({ inventory, currencyFilter, dispatch }) => {
   return <ul id="inventory-container">{inventory.map(createInventoryItem)}</ul>;
 
   function createInventoryItem(inventoryItem) {
-    const { price, name, img } = inventoryItem;
+    const { price, itemName, img } = inventoryItem;
     const displayPrice = calculatePrice(price, currencyFilter);
     return (
-      <li key={name} className="item">
+      <li key={itemName} className="item">
         <img src={img} alt={''} />
-        <h3>{name}</h3>
+        <h3>{itemName}</h3>
         <h3 className="price">
           {getCurrencySymbol(currencyFilter)}
           {displayPrice.toFixed(2)}
