@@ -33,7 +33,7 @@ export const Cart = (props) => {
             <h3 className="total">
                 Total{' '}
                 <span className="total-value">
-                    {getCurrencySymbol(currencyFilter)} {total} {currencyFilter}
+                    {getCurrencySymbol(currencyFilter)} {total}
                 </span>
             </h3>
         </div>
