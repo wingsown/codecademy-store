@@ -1,5 +1,6 @@
 import cap from './img/cap.jpg';
 import sweats from './img/sweats-4.jpg';
+import tshirt from './img/t-shirt.jpg';
 
 export const inventoryData = [
     { 
@@ -15,9 +16,9 @@ export const inventoryData = [
     },
 
     {
-        itemName: 'Java T-shirt',
+        itemName: 'T-shirt',
         price: 17.99,
-        img: 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/java-tee.jpg' 
+        img: tshirt
     },
 
     {
