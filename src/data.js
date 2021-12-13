@@ -1,17 +1,17 @@
 import cap from './img/cap.jpg';
+import sweats from './img/sweats-4.jpg';
 
 export const inventoryData = [
     { 
-        itemName: 'Hat',
+        itemName: 'Cap',
         price: 23.99,
         img: cap
-        // https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/hello-world-hat.jpg
     },
 
     {
-        itemName: 'Joggers',
+        itemName: 'Sweatpants',
         price: 45.99,
-        img: 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/sweatpants.jpg'
+        img: sweats
     },
 
     {
