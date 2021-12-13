@@ -1,6 +1,8 @@
 import cap from './img/cap.jpg';
 import sweats from './img/sweats-4.jpg';
 import tshirt from './img/t-shirt.jpg';
+import shorts from './img/shorts-2.jpg';
+import hoodie from './img/hoodie-2.jpg';
 
 export const inventoryData = [
     { 
@@ -22,20 +24,21 @@ export const inventoryData = [
     },
 
     {
-        itemName: 'Python Tee',
+        itemName: 'Shorts',
         price: 17.99,
-        img: 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/python-tee.jpg'
+        img: shorts
     },
 
     {
-        itemName: 'SQL Tee',
-        price: 17.99,
-        img: 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/sql-tee.jpg'
+        itemName: 'Hoodie',
+        price: 49.99,
+        img: hoodie
+        // 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/sql-tee.jpg'
     },
 
     {
         itemName: 'Hello World Hoodie',
-        price: 49.99,
+        price: 99.99,
         img: 'https://static-assets.codecademy.com/Courses/Learn-Redux/codecademy-store/hoodie.jpg'
     }
 ];
