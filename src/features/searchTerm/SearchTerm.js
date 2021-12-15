@@ -26,7 +26,7 @@ export const SearchTerm = (props) => {
             type="text"
             id="search"
             value={searchTerm}
-            onChange={onClearSearchTermHandler}
+            onChange={onSearchTermChangeHandler}
             placeholder="Search products" 
           />
           {searchTerm.length > 0 && (

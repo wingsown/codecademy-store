@@ -17,6 +17,11 @@ export const App = (props) => {
         currencyFilter={state.currencyFilter}
         dispatch={dispatch}
       />
+
+      <SearchTerm 
+        searchTerm={state.searchTerm}
+        dispatch={dispatch}
+      />
       <Inventory
         inventory={state.inventory}
         currencyFilter={state.currencyFilter}
