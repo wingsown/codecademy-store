@@ -3,6 +3,7 @@ import './App.css';
 import { CurrencyFilter } from './features/currencyFilter/CurrencyFilter';
 import { Inventory } from './features/inventory/Inventory';
 import { Cart } from './features/cart/Cart';
+import { SearchTerm } from './features/searchTerm/SearchTerm';
 
 
 

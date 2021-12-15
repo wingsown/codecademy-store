@@ -13,7 +13,7 @@ export const searchTermReducer = (state = initialState, action) => {
     }
 }
 
-export const searchTerm = (term) => {
+export const setSearchTerm = (term) => {
     return {
         type: 'searchTerm/setSearchTerm',
         payload: term
